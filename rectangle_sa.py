@@ -33,7 +33,7 @@ def print_instructions():
     Print the purpose of the program and instructions for the user.
     """
     print("This program calculates the surface area of a rectangular prism.")
-    print("Please enter the following dimensions:")
+    print("Please enter the following dimensions.")
 
 def get_length():
     """
@@ -66,7 +66,7 @@ def main():
     height = get_height()
 
     total_surface_area = surface_area(length, width, height)
-    print(f"The total surface area of the rectangular prism is {total_surface_area} square units.")
+    print("The total surface area of the rectangular prism is" ,total_surface_area, "units squared.")
 
 if __name__ == "__main__":
     main()

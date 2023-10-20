@@ -1,12 +1,10 @@
-def print_output():
-    print("Python is cool!")
+import unittest
+import rectangle_sa
+
+class MyTestCase(unittest.TestCase):
+    def test_something(self):
+        self.assertEqual(52, rectangle_sa.surface_area(3, 4, 2))
 
 
-def rectangle_are(length, width):
-    area = length * width
-    return area
-
-
-print_output()
-word = "123"
-print(str.isdigit(word))
+if __name__ == '__main__':
+    unittest.main()
